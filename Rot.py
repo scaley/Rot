@@ -16,7 +16,7 @@ def get_euler(R):
 		return (theta[0], psi[0], phi[0]), (theta[1], psi[1], phi[1])
 	else:
 		phi = 0
-		
+
 		if R[2, 0] == 1:
 			theta = np.pi/2
 			psi = phi + np.arctan2(R[0, 1], R[0, 2])
@@ -24,7 +24,7 @@ def get_euler(R):
 			theta = -np.pi/2
 			psi = -phi + np.arctan2(-R[0, 1], -R[0, 2])
 
-		return theta, psi, phi
+		return (theta, psi, phi)
 
 #Define the rotation matrix
 R = m([[0,0,-0.5],[0,1,0],[0.5,0,0]])
