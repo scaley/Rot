@@ -3,19 +3,18 @@ from math import *
 m = matrix
 
 #Define the rotation matrix
-R = m([[0,0,-1],[0,1,0],[1,0,0]])
+R = m([[0,0,-0.5],[0,1,0],[0.5,0,0]])
 #R = m([[0.5,-0.1464,0.8536],[0.5,0.8536,-0.1464],[-0.7071,0.5,0.5]])
 
 print R
 
-var1 = R[2,0]
+var = R[2,0]
 
-if var1 == 1 or var == -1:
+if var == 1 or var == -1:
 	print 'Ok, we have to do this the hard way...'
 	Phi = 0 # anything (can set to zero)
 	
-	var2 = R[2,0]
-	if var2 == -1:
+	if var == -1:
 		Theta = pi/2
 		Psi = Phi + atan2(R[0,1], R[0,2])
 		
