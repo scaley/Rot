@@ -2,7 +2,7 @@
 
 ## Converting to Euler Angle
 
-Doing some rotation stuff
+Doing some rotation stuff.  The reference for this code can be found [here] [1]
 
 to run this code, do one of the following:
 
@@ -29,3 +29,6 @@ from Rot import *
 eang = read_ctf()
 
 ```
+
+
+[1] https://truesculpt.googlecode.com/hg-history/38000e9dfece971460473d5788c235fbbe82f31b/Doc/rotation_matrix_to_euler.pdf
