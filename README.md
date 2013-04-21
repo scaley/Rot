@@ -1,5 +1,7 @@
 #Seth's Awesome Repository
 
+## Converting to Euler Angle
+
 Doing some rotation stuff
 
 to run this code, do one of the following:
@@ -15,5 +17,15 @@ R = m([[0,0,-0.5],[0,1,0],[0.5,0,0]])
 
 print get_euler(R)
 print get_euler2(R)
+
+```
+
+## Reading CTF File
+
+```python
+
+from Rot import *
+
+eang = read_ctf()
 
 ```

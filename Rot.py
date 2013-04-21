@@ -4,6 +4,18 @@ from math import *
 import numpy as np
 m = matrix
 
+CTF_FNAME = 'NC07-14AMap1proc-LGp50m1pg.ctf'
+
+def read_ctf(fname=CTF_FNAME):
+
+	eang = []
+	for line in open(fname).readlines()[18:]:
+		tmp = line.strip().split('\t')
+
+		eang.append([float(x) for x in tmp[5:8]])
+
+	return eang
+
 def atan2_(a, b, theta):
 	return np.arctan2(a/np.cos(theta), b/np.cos(theta))
 
