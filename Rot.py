@@ -2,6 +2,9 @@ from numpy import *
 from math import *
 m = matrix
 
+
+def get_euler():
+	
 #Define the rotation matrix
 R = m([[0,0,-0.5],[0,1,0],[0.5,0,0]])
 #R = m([[0.5,-0.1464,0.8536],[0.5,0.8536,-0.1464],[-0.7071,0.5,0.5]])
