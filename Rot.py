@@ -14,7 +14,9 @@ def read_ctf(fname=CTF_FNAME):
 
 		eang.append([float(x) for x in tmp[5:8]])
 
-	return eang
+	return np.array(eang)
+
+print read_ctf()[10, 0]
 
 def atan2_(a, b, theta):
 	return np.arctan2(a/np.cos(theta), b/np.cos(theta))
